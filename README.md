@@ -25,7 +25,7 @@ The basic usage consists of creating `diagnostics_msgs` and services for control
 1. Run JTOP node: <br/>
 ``` ros2 run ros2_jetson_stats ros2_jtop ```<br/>
 If you want to change frequency of JTOP messages, do following:<br/>
-``` ros2 run ros2_jetson_stats ros2_jtop --ros-args -p interval:=0.2```<br/>
+``` ros2 run ros2_jetson_stats ros2_jtop --ros-args -r __ns:=/jtop -p interval:=1.0 ```<br/>
 *Note: JTOP frequency is from 0 - 1 range*
 
 2. You can see diagnostic messages using following command:
