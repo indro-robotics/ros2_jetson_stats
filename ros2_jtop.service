@@ -10,7 +10,7 @@ Type=simple
 
 # Setup the ROS 2 environment and run the command
 ExecStart=/bin/bash -c "source /opt/ros/humble/setup.bash; \
-                       source /home/indro/colcon_ws/install/setup.bash && ros2 run ros2_jetson_stats ros2_jtop --ros-args -r __ns:=/jtop -p interval:=1.0 "
+                       source /home/indro/colcon_ws/install/setup.bash && ros2 run ros2_jetson_stats ros2_jtop --ros-args -r __ns:=/jtop -p interval:=2.0 "
 
 # Auto-restart configuration
 Restart=always
