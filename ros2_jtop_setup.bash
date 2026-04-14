@@ -1,6 +1,7 @@
 #!/bin/bash
 #please clonse this in colcon_ws on jetson
 source /opt/ros/humble/setup.bash
+sudo pip3 install jetson-stats==4.3.2
 cd ~/colcon_ws
 colcon build
 source install/setup.bash
